@@ -1,0 +1,342 @@
+
+*** Running vivado
+    with args -log ALU_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_top.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source ALU_top.tcl -notrace
+Command: synth_design -top ALU_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 70854 
+WARNING: [Synth 8-2827] unknown version specifier string 1800-2012, `begin_keywords ignored [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv:21]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1149.000 ; gain = 78.242 ; free physical = 3042 ; free virtual = 13517
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU_top' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU_top.sv:22]
+INFO: [Synth 8-638] synthesizing module 'But_opcode' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/But_opcode.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'But_opcode' (1#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/But_opcode.sv:21]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv:33]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-638] synthesizing module 'encoder' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (3#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv:21]
+INFO: [Synth 8-638] synthesizing module 'Counter' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (4#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv:20]
+INFO: [Synth 8-638] synthesizing module 'Counter_3bit' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter_3bit.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'Counter_3bit' (5#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter_3bit.sv:20]
+INFO: [Synth 8-638] synthesizing module 'cathode_MUX' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/cathode_MUX.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'cathode_MUX' (6#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/cathode_MUX.sv:22]
+INFO: [Synth 8-638] synthesizing module 'anode_MUX' [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/anode_MUX.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'anode_MUX' (7#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/anode_MUX.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU_top' (8#1) [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU_top.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1174.250 ; gain = 103.492 ; free physical = 3065 ; free virtual = 13536
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1174.250 ; gain = 103.492 ; free physical = 3065 ; free virtual = 13536
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.703 ; gain = 0.000 ; free physical = 2827 ; free virtual = 13298
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2908 ; free virtual = 13379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2908 ; free virtual = 13379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2910 ; free virtual = 13381
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "stored_resultant" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv:28]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2901 ; free virtual = 13372
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module But_opcode 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module encoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module Counter_3bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module cathode_MUX 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module anode_MUX 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element Counter/counter_reg was removed.  [/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv:28]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2888 ; free virtual = 13359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2742 ; free virtual = 13212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2741 ; free virtual = 13212
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    41|
+|3     |LUT1   |    18|
+|4     |LUT2   |    66|
+|5     |LUT3   |    58|
+|6     |LUT4   |    82|
+|7     |LUT5   |    13|
+|8     |LUT6   |    68|
+|9     |MUXF7  |     7|
+|10    |FDRE   |   115|
+|11    |FDSE   |    15|
+|12    |IBUF   |    22|
+|13    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |   521|
+|2     |  ALU          |ALU          |   262|
+|3     |  But_opcode   |But_opcode   |    23|
+|4     |  Counter      |Counter      |    36|
+|5     |  Counter_3bit |Counter_3bit |    34|
+|6     |  anode_MUX    |anode_MUX    |     9|
+|7     |  cathode_MUX  |cathode_MUX  |     7|
+|8     |  encoder0     |encoder      |    14|
+|9     |  encoder1     |encoder_0    |    14|
+|10    |  encoder2     |encoder_1    |    14|
+|11    |  encoder3     |encoder_2    |    14|
+|12    |  encoder4     |encoder_3    |    14|
+|13    |  encoder5     |encoder_4    |    14|
+|14    |  encoder6     |encoder_5    |    14|
+|15    |  encoder7     |encoder_6    |    14|
++------+---------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2739 ; free virtual = 13210
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1540.703 ; gain = 103.492 ; free physical = 2792 ; free virtual = 13263
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1540.703 ; gain = 469.945 ; free physical = 2792 ; free virtual = 13263
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1540.703 ; gain = 482.535 ; free physical = 2763 ; free virtual = 13234
+INFO: [Common 17-1381] The checkpoint '/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.runs/synth_1/ALU_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1564.715 ; gain = 0.000 ; free physical = 2759 ; free virtual = 13230
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 19:44:41 2020...
