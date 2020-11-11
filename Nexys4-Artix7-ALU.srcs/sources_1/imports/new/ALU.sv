@@ -29,7 +29,7 @@ module ALU(
 
 reg[15:0] stored_resultant;
 
-always_ff @(posedge clk) begin
+always @(posedge clk) begin
     case (opcode)
         4'b0000:    // Add
             stored_resultant <= number1 + number2;

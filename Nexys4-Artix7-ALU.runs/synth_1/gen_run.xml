@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1603928647">
-  <File Type="VDS-TIMING-PB" Name="ALU_top_timing_summary_synth.pb"/>
+  <File Type="RDS-DCP" Name="ALU_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ALU_top_utilization_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ALU_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ALU_top_timing_summary_synth.pb"/>
   <File Type="RDS-RDS" Name="ALU_top.vds"/>
   <File Type="PA-TCL" Name="ALU_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ALU_top_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="ALU_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ALU_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ALU_top.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/ALU.sv">
@@ -103,9 +103,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

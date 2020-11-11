@@ -1,0 +1,13 @@
+0.6
+2017.2
+Jun 15 2017
+18:41:53
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv,1605133483,systemVerilog,,,,ALU,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU_top.sv,1603576134,systemVerilog,,,,ALU_top,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/But_opcode.sv,1603675572,systemVerilog,,,,But_opcode,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv,1603573029,systemVerilog,,,,Counter,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter_3bit.sv,1603570890,systemVerilog,,,,Counter_3bit,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/anode_MUX.sv,1603572569,systemVerilog,,,,anode_MUX,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/cathode_MUX.sv,1603675768,systemVerilog,,,,cathode_MUX,,xil_defaultlib,,,,,,
+/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv,1603576047,systemVerilog,,,,encoder,,xil_defaultlib,,,,,,

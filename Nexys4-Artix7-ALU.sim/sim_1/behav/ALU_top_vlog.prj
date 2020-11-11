@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/But_opcode.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter_3bit.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/anode_MUX.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/cathode_MUX.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv"
+sv xil_defaultlib  "../../../Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU_top.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
