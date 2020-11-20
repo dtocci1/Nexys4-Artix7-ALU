@@ -39,6 +39,8 @@ always @(posedge clk) begin
             stored_resultant <= number1 * number2;
         4'b0011:    // Divide
             stored_resultant <= number1 / number2;
+        4'b0100:    // Modulo
+            stored_resultant <= number1 % number2;
         // Possibly add more cases if time
     endcase
     
