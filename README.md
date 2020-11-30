@@ -27,6 +27,10 @@ Physical ALU developed for Nexys 4 DDR Artix-7 board
 ![Image of ALU Division](https://i.imgur.com/R87ep5e.jpg)\
 0x08 / 0x02 = 0x0004
 
+### ALU Modulation
+![Image of ALU Modulation](https://i.imgur.com/CixGoaa.jpg)\
+0x3c % 0x018 = 0x000C
+
 ## RTL Schematic
 ![Image of RTL Schematic for ALU](https://i.imgur.com/5pscpKk.png)
 
