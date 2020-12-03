@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Nov 19 19:55:55 2020
-# Process ID: 9587
+# Start of session at: Tue Dec  1 19:52:48 2020
+# Process ID: 6128
 # Current directory: /home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.runs/impl_1
 # Command line: vivado -log ALU_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ALU_top.tcl -notrace
 # Log file: /home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.runs/impl_1/ALU_top.vdi

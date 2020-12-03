@@ -18,7 +18,7 @@
 //  - Push BTNC? to loop back around and start over
 // Revision 0.01 - File Created
 //////////////////////////////////////////////////////////////////////////////////
-
+`timescale 1ns/1ns
 module ALU_top(clk, BTNC, BTNU, BTND, BTNL, BTNR,C, SW, AN);
         input         clk, BTNC, BTNU, BTND, BTNL, BTNR;
         input  [15:0] SW;
@@ -41,15 +41,15 @@ module ALU_top(clk, BTNC, BTNU, BTND, BTNL, BTNR,C, SW, AN);
             // Run ALU on numbers
             ALU ALU (.clk(clk), .number1(SW[15:8]), .number2(SW[7:0]), .opcode(opcode), .resultant(resultant)); // Using button press and input from switches to perform arithmatic operation
             
-            // Convert both input and output to anode values for 7-segment display
-            encoder encoder0(.clk(clk), .binNumber(SW[15:12]), .anodeNumber(dig0));
-            encoder encoder1(.clk(clk), .binNumber(SW[11:8]), .anodeNumber(dig1));
-            encoder encoder2(.clk(clk), .binNumber(SW[7:4]), .anodeNumber(dig2));
-            encoder encoder3(.clk(clk), .binNumber(SW[3:0]), .anodeNumber(dig3));
-            encoder encoder4(.clk(clk), .binNumber(resultant[15:12]), .anodeNumber(dig4));
-            encoder encoder5(.clk(clk), .binNumber(resultant[11:8]), .anodeNumber(dig5));
-            encoder encoder6(.clk(clk), .binNumber(resultant[7:4]), .anodeNumber(dig6));
-            encoder encoder7(.clk(clk), .binNumber(resultant[3:0]), .anodeNumber(dig7));
+            // Convert both input and output to cathode values for 7-segment display
+            encoder encoder0(.clk(clk), .binNumber(SW[15:12]), .cathodeNumber(dig0));
+            encoder encoder1(.clk(clk), .binNumber(SW[11:8]), .cathodeNumber(dig1));
+            encoder encoder2(.clk(clk), .binNumber(SW[7:4]), .cathodeNumber(dig2));
+            encoder encoder3(.clk(clk), .binNumber(SW[3:0]), .cathodeNumber(dig3));
+            encoder encoder4(.clk(clk), .binNumber(resultant[15:12]), .cathodeNumber(dig4));
+            encoder encoder5(.clk(clk), .binNumber(resultant[11:8]), .cathodeNumber(dig5));
+            encoder encoder6(.clk(clk), .binNumber(resultant[7:4]), .cathodeNumber(dig6));
+            encoder encoder7(.clk(clk), .binNumber(resultant[3:0]), .cathodeNumber(dig7));
             
             // Generate artificial clock to drive 7-segment display
             Counter Counter(.clk(clk), .aclk(aclk));

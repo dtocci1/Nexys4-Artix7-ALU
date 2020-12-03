@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Thu Nov 19 19:56:21 2020
+| Date         : Tue Dec  1 19:53:14 2020
 | Host         : dylan-Blade running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_utilization -file ALU_top_utilization_placed.rpt -pb ALU_top_utilization_placed.pb
 | Design       : ALU_top

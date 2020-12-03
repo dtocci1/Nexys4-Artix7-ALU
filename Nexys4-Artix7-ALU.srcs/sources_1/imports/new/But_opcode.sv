@@ -36,7 +36,7 @@ always @(posedge clk) begin
     else if (BTNR == 1)
         stored_opcode <= 4'b0011; // DIV
     else if (BTND == 1)
-        stored_opcode <= 4'b0100; // UNDEF.
+        stored_opcode <= 4'b0100; // MODULO
     else
         stored_opcode <= 4'b1111; //error
 

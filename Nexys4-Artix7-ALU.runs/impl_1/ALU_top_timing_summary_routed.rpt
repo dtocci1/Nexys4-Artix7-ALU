@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Thu Nov 19 19:56:42 2020
+| Date         : Tue Dec  1 19:53:35 2020
 | Host         : dylan-Blade running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ALU_top_timing_summary_routed.rpt -rpx ALU_top_timing_summary_routed.rpx
 | Design       : ALU_top
@@ -769,7 +769,7 @@ Min Delay Paths
 Slack (MET) :             0.142ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[14]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder4/anodeNumber_reg[0]/D
+  Destination:            encoder4/cathodeNumber_reg[0]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -795,9 +795,9 @@ Slack (MET) :             0.142ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X7Y94          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  ALU/resultant_reg[14]/Q
                          net (fo=7, routed)           0.089     1.753    encoder4/resultant_reg[15][2]
-    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.045     1.798 r  encoder4/anodeNumber[0]_i_1/O
-                         net (fo=1, routed)           0.000     1.798    encoder4/anodeNumber[0]
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[0]/D
+    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.045     1.798 r  encoder4/cathodeNumber[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.798    encoder4/cathodeNumber[0]
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -808,9 +808,9 @@ Slack (MET) :             0.142ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder4/CLK
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[0]/C
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[0]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.120     1.655    encoder4/anodeNumber_reg[0]
+    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.120     1.655    encoder4/cathodeNumber_reg[0]
   -------------------------------------------------------------------
                          required time                         -1.655    
                          arrival time                           1.798    
@@ -820,7 +820,7 @@ Slack (MET) :             0.142ns  (arrival time - required time)
 Slack (MET) :             0.169ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[12]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder4/anodeNumber_reg[2]/D
+  Destination:            encoder4/cathodeNumber_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -846,9 +846,9 @@ Slack (MET) :             0.169ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X7Y94          FDRE (Prop_fdre_C_Q)         0.141     1.663 f  ALU/resultant_reg[12]/Q
                          net (fo=7, routed)           0.124     1.788    encoder4/resultant_reg[15][0]
-    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.048     1.836 r  encoder4/anodeNumber[2]_i_1/O
-                         net (fo=1, routed)           0.000     1.836    encoder4/anodeNumber[2]
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[2]/D
+    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.048     1.836 r  encoder4/cathodeNumber[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.836    encoder4/cathodeNumber[2]
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -859,9 +859,9 @@ Slack (MET) :             0.169ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder4/CLK
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[2]/C
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[2]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.131     1.666    encoder4/anodeNumber_reg[2]
+    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.131     1.666    encoder4/cathodeNumber_reg[2]
   -------------------------------------------------------------------
                          required time                         -1.666    
                          arrival time                           1.836    
@@ -871,7 +871,7 @@ Slack (MET) :             0.169ns  (arrival time - required time)
 Slack (MET) :             0.176ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[12]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder4/anodeNumber_reg[1]/D
+  Destination:            encoder4/cathodeNumber_reg[1]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -897,9 +897,9 @@ Slack (MET) :             0.176ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X7Y94          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  ALU/resultant_reg[12]/Q
                          net (fo=7, routed)           0.124     1.788    encoder4/resultant_reg[15][0]
-    SLICE_X6Y94          LUT4 (Prop_lut4_I2_O)        0.045     1.833 r  encoder4/anodeNumber[1]_i_1/O
-                         net (fo=1, routed)           0.000     1.833    encoder4/anodeNumber[1]
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[1]/D
+    SLICE_X6Y94          LUT4 (Prop_lut4_I2_O)        0.045     1.833 r  encoder4/cathodeNumber[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.833    encoder4/cathodeNumber[1]
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -910,9 +910,9 @@ Slack (MET) :             0.176ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder4/CLK
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[1]/C
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[1]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.121     1.656    encoder4/anodeNumber_reg[1]
+    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.121     1.656    encoder4/cathodeNumber_reg[1]
   -------------------------------------------------------------------
                          required time                         -1.656    
                          arrival time                           1.833    
@@ -922,7 +922,7 @@ Slack (MET) :             0.176ns  (arrival time - required time)
 Slack (MET) :             0.180ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder5/anodeNumber_reg[2]/D
+  Destination:            encoder5/cathodeNumber_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -948,9 +948,9 @@ Slack (MET) :             0.180ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X5Y93          FDRE (Prop_fdre_C_Q)         0.141     1.663 f  ALU/resultant_reg[8]/Q
                          net (fo=7, routed)           0.110     1.773    encoder5/resultant_reg[11][0]
-    SLICE_X4Y93          LUT4 (Prop_lut4_I1_O)        0.049     1.822 r  encoder5/anodeNumber[2]_i_1/O
-                         net (fo=1, routed)           0.000     1.822    encoder5/anodeNumber[2]
-    SLICE_X4Y93          FDRE                                         r  encoder5/anodeNumber_reg[2]/D
+    SLICE_X4Y93          LUT4 (Prop_lut4_I1_O)        0.049     1.822 r  encoder5/cathodeNumber[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.822    encoder5/cathodeNumber[2]
+    SLICE_X4Y93          FDRE                                         r  encoder5/cathodeNumber_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -961,9 +961,9 @@ Slack (MET) :             0.180ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder5/CLK
-    SLICE_X4Y93          FDRE                                         r  encoder5/anodeNumber_reg[2]/C
+    SLICE_X4Y93          FDRE                                         r  encoder5/cathodeNumber_reg[2]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X4Y93          FDRE (Hold_fdre_C_D)         0.107     1.642    encoder5/anodeNumber_reg[2]
+    SLICE_X4Y93          FDRE (Hold_fdre_C_D)         0.107     1.642    encoder5/cathodeNumber_reg[2]
   -------------------------------------------------------------------
                          required time                         -1.642    
                          arrival time                           1.822    
@@ -973,7 +973,7 @@ Slack (MET) :             0.180ns  (arrival time - required time)
 Slack (MET) :             0.191ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder5/anodeNumber_reg[1]/D
+  Destination:            encoder5/cathodeNumber_reg[1]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -999,9 +999,9 @@ Slack (MET) :             0.191ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X5Y93          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  ALU/resultant_reg[8]/Q
                          net (fo=7, routed)           0.110     1.773    encoder5/resultant_reg[11][0]
-    SLICE_X4Y93          LUT4 (Prop_lut4_I2_O)        0.045     1.818 r  encoder5/anodeNumber[1]_i_1/O
-                         net (fo=1, routed)           0.000     1.818    encoder5/anodeNumber[1]
-    SLICE_X4Y93          FDRE                                         r  encoder5/anodeNumber_reg[1]/D
+    SLICE_X4Y93          LUT4 (Prop_lut4_I2_O)        0.045     1.818 r  encoder5/cathodeNumber[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.818    encoder5/cathodeNumber[1]
+    SLICE_X4Y93          FDRE                                         r  encoder5/cathodeNumber_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1012,9 +1012,9 @@ Slack (MET) :             0.191ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder5/CLK
-    SLICE_X4Y93          FDRE                                         r  encoder5/anodeNumber_reg[1]/C
+    SLICE_X4Y93          FDRE                                         r  encoder5/cathodeNumber_reg[1]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X4Y93          FDRE (Hold_fdre_C_D)         0.092     1.627    encoder5/anodeNumber_reg[1]
+    SLICE_X4Y93          FDRE (Hold_fdre_C_D)         0.092     1.627    encoder5/cathodeNumber_reg[1]
   -------------------------------------------------------------------
                          required time                         -1.627    
                          arrival time                           1.818    
@@ -1073,7 +1073,7 @@ Slack (MET) :             0.198ns  (arrival time - required time)
 Slack (MET) :             0.200ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[14]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder4/anodeNumber_reg[6]/D
+  Destination:            encoder4/cathodeNumber_reg[6]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -1099,9 +1099,9 @@ Slack (MET) :             0.200ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X7Y94          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  ALU/resultant_reg[14]/Q
                          net (fo=7, routed)           0.155     1.819    encoder4/resultant_reg[15][2]
-    SLICE_X6Y94          LUT4 (Prop_lut4_I2_O)        0.048     1.867 r  encoder4/anodeNumber[6]_i_1/O
-                         net (fo=1, routed)           0.000     1.867    encoder4/anodeNumber[6]
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[6]/D
+    SLICE_X6Y94          LUT4 (Prop_lut4_I2_O)        0.048     1.867 r  encoder4/cathodeNumber[6]_i_1/O
+                         net (fo=1, routed)           0.000     1.867    encoder4/cathodeNumber[6]
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1112,9 +1112,9 @@ Slack (MET) :             0.200ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder4/CLK
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[6]/C
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[6]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.131     1.666    encoder4/anodeNumber_reg[6]
+    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.131     1.666    encoder4/cathodeNumber_reg[6]
   -------------------------------------------------------------------
                          required time                         -1.666    
                          arrival time                           1.867    
@@ -1124,7 +1124,7 @@ Slack (MET) :             0.200ns  (arrival time - required time)
 Slack (MET) :             0.201ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder6/anodeNumber_reg[2]/D
+  Destination:            encoder6/cathodeNumber_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -1150,9 +1150,9 @@ Slack (MET) :             0.201ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X5Y92          FDRE (Prop_fdre_C_Q)         0.141     1.662 f  ALU/resultant_reg[4]/Q
                          net (fo=7, routed)           0.131     1.794    encoder6/resultant_reg[7][0]
-    SLICE_X4Y92          LUT4 (Prop_lut4_I1_O)        0.049     1.843 r  encoder6/anodeNumber[2]_i_1/O
-                         net (fo=1, routed)           0.000     1.843    encoder6/anodeNumber[2]
-    SLICE_X4Y92          FDRE                                         r  encoder6/anodeNumber_reg[2]/D
+    SLICE_X4Y92          LUT4 (Prop_lut4_I1_O)        0.049     1.843 r  encoder6/cathodeNumber[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.843    encoder6/cathodeNumber[2]
+    SLICE_X4Y92          FDRE                                         r  encoder6/cathodeNumber_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1163,9 +1163,9 @@ Slack (MET) :             0.201ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.873     2.038    encoder6/CLK
-    SLICE_X4Y92          FDRE                                         r  encoder6/anodeNumber_reg[2]/C
+    SLICE_X4Y92          FDRE                                         r  encoder6/cathodeNumber_reg[2]/C
                          clock pessimism             -0.503     1.534    
-    SLICE_X4Y92          FDRE (Hold_fdre_C_D)         0.107     1.641    encoder6/anodeNumber_reg[2]
+    SLICE_X4Y92          FDRE (Hold_fdre_C_D)         0.107     1.641    encoder6/cathodeNumber_reg[2]
   -------------------------------------------------------------------
                          required time                         -1.641    
                          arrival time                           1.843    
@@ -1224,7 +1224,7 @@ Slack (MET) :             0.203ns  (arrival time - required time)
 Slack (MET) :             0.207ns  (arrival time - required time)
   Source:                 ALU/resultant_reg[14]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            encoder4/anodeNumber_reg[5]/D
+  Destination:            encoder4/cathodeNumber_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -1250,9 +1250,9 @@ Slack (MET) :             0.207ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X7Y94          FDRE (Prop_fdre_C_Q)         0.141     1.663 r  ALU/resultant_reg[14]/Q
                          net (fo=7, routed)           0.155     1.819    encoder4/resultant_reg[15][2]
-    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.045     1.864 r  encoder4/anodeNumber[5]_i_1/O
-                         net (fo=1, routed)           0.000     1.864    encoder4/anodeNumber[5]
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[5]/D
+    SLICE_X6Y94          LUT4 (Prop_lut4_I1_O)        0.045     1.864 r  encoder4/cathodeNumber[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.864    encoder4/cathodeNumber[5]
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1263,9 +1263,9 @@ Slack (MET) :             0.207ns  (arrival time - required time)
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
                          net (fo=112, routed)         0.874     2.039    encoder4/CLK
-    SLICE_X6Y94          FDRE                                         r  encoder4/anodeNumber_reg[5]/C
+    SLICE_X6Y94          FDRE                                         r  encoder4/cathodeNumber_reg[5]/C
                          clock pessimism             -0.503     1.535    
-    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.121     1.656    encoder4/anodeNumber_reg[5]
+    SLICE_X6Y94          FDRE (Hold_fdre_C_D)         0.121     1.656    encoder4/cathodeNumber_reg[5]
   -------------------------------------------------------------------
                          required time                         -1.656    
                          arrival time                           1.864    
@@ -1303,7 +1303,7 @@ Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.50
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y90     ALU/resultant_reg[2]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X5Y93     ALU/resultant_reg[8]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y93     ALU/resultant_reg[9]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y93     encoder2/anodeNumber_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y93     encoder2/cathodeNumber_reg[2]/C
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X0Y84     Counter/counter_reg[1]/C
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X0Y84     Counter/counter_reg[2]/C
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X0Y84     Counter/counter_reg[3]/C

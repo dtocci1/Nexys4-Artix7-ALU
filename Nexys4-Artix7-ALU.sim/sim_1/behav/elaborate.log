@@ -5,7 +5,20 @@ Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/But_opcode.sv" Line 21. Module But_opcode doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/ALU.sv" Line 23. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/encoder.sv" Line 21. Module encoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter.sv" Line 20. Module Counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/Counter_3bit.sv" Line 20. Module Counter_3bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/cathode_MUX.sv" Line 22. Module cathode_MUX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/dylan/Documents/Nexys4-Artix7-ALU/Nexys4-Artix7-ALU.srcs/sources_1/imports/new/anode_MUX.sv" Line 22. Module anode_MUX doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.But_opcode
